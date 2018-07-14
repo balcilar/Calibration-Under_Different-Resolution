@@ -6,7 +6,7 @@ Unfortunately neither Matlab's nor OpenCV's does not give us an opportunity to c
 
 ![Sample image](Outputs/1stframes.bmp?raw=true "Title")
 
-We slightly modified ```estimateCameraParameters.m```and ```rectifyStereoImages.m ``` functions of Matlab Tooloboxes. You can find them on that repository. Also we provided demo script. ou can run it with following command.
+We slightly modified ```estimateCameraParameters.m``` and ```rectifyStereoImages.m ``` functions of Matlab Toolboxes. You can find them on that repository. Also we provided demo script. You can run it with following command.
 
 ```
 > Demo
