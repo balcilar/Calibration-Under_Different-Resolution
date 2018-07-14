@@ -11,4 +11,6 @@ We slightly modified ```estimateCameraParameters.m```and ```rectifyStereoImages.
 ```
 > Demo
 ```
-then you can 
+then you can take following outputs as a results. You can see extrinsic parameter, rectified image pair and position of cameras relative to 1st checkerboard points, their ground truth and also estimated positions from triangulation of both camera.
+
+![Sample image](Outputs/results.bmp?raw=true "Title")
