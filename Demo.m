@@ -101,9 +101,9 @@ plot3(CL(1),CL(2),CL(3),'cs','MarkerFaceColor','c');
 legend({'ground truth point locations','Calculated point locations','Camera2 position','Camera1 Position'});
 
 
-% calculate relative distance from camera1 to camera2
+% calculate relative distance from camera1 to camera2 in two different way
 dist_1=norm(param.TranslationOfCamera2)
-dist_1=norm(CR-CL)
+dist_2=norm(CR-CL)
 
 
 
