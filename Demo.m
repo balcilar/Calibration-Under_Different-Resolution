@@ -28,8 +28,6 @@ file2={'Inputs/PTZCamera1.bmp',...
 [imagePoints{1}, boardSize, imagesUsed1] = detectCheckerboardPoints(file1);
 [imagePoints{2}, boardSize, imagesUsed2] = detectCheckerboardPoints(file2);
 
-% check each image pair has same boardsize
-
 % Generate world coordinates of the checkerboards keypoints
 squareSize = 25;  % in units of 'mm'
 worldPoints = generateCheckerboardPoints(boardSize, squareSize);
