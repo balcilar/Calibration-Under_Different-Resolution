@@ -14,3 +14,44 @@ We slightly modified ```estimateCameraParameters.m```and ```rectifyStereoImages.
 then you can take following outputs as a results. You can see extrinsic parameter, rectified image pair and position of cameras relative to 1st checkerboard points, their ground truth and also estimated positions from triangulation of both camera.
 
 ![Sample image](Outputs/results.bmp?raw=true "Title")
+
+Here is the calibration parameters of USB camera;
+
+```
+K1 =  
+
+    1157.0         0    931.2
+         0    1147.4    376.0
+         0         0    1
+R1 =
+   -0.9972    0.0177   -0.0732
+   -0.0328   -0.9770    0.2108
+   -0.0678    0.2126    0.9748
+
+T1 =
+   58.6597
+  -30.2059
+  613.0425
+  ```
+  
+  And also here is PZT camera parameters
+  
+  ```
+  K2 =
+  876.9470         0  326.4428
+         0  776.9896  196.5821
+         0         0    1.0000
+         
+R2 =
+   -0.9997    0.0114   -0.0231
+   -0.0137   -0.9944    0.1043
+   -0.0218    0.1046    0.9943
+   
+T2 =
+   93.4428
+  101.1229
+  584.6069  
+  
+  ```
+  
+  
