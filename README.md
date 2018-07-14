@@ -15,7 +15,7 @@ then you can take following outputs as a results. You can see extrinsic paramete
 
 ![Sample image](Outputs/results.bmp?raw=true "Title")
 
-Here is the calibration parameters of USB camera;
+Here is the global intrinsic calibration parameters of USB camera K and also R and T for 1st calibration board.;
 
 ```
 K1 =  
