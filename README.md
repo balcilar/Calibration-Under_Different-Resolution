@@ -53,5 +53,6 @@ T2 =
   584.6069  
   
   ```
+Beside that you can get the one image into another image plane. But without knowing depth information, theoretically it is not possible to project each pixel in the right place. So let's assume all objects are Z=0 world plane, where the top-left corner of the first calibration checkerboard is our reference point. Here is the projection result of PZT image onto the USB camera image plane.
   
-  
+![Sample image](Outputs/projection.jpg?raw=true "Title")
