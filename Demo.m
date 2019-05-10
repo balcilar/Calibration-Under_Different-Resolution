@@ -108,6 +108,29 @@ dist_2=norm(CR-CL)
 
 
 
+% set the projection plane. I just project all pixel on to Z=0 plane
+Z=0;
+
+O=zeros(size(I1));
+% remapping
+for i=1:size(I1,1)
+    i
+    for j=1:size(I1,2)
+        X=inv([Lcam(:,1:2) [-1*j;-1*i;-1]])*(-Z*Lcam(:,3)-Lcam(:,4));
+        P=Rcam*[X(1);X(2);Z;1];
+        P=fix(P/P(end));
+        if P(1)>0 & P(2)<size(I2,1) & P(2)>0 & P(1)<size(I2,2)
+            O(i,j,:)=I2(P(2),P(1),:);
+        end
+    end
+end
+figure;imshow(uint8(O))
+figure;imshowpair(I1,uint8(O),'falsecolor','ColorChannels','red-cyan');
+
+
+
+
+
 
 
 
